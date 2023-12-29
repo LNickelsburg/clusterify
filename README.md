@@ -43,3 +43,34 @@ Just run it woooooo
 
 ## **Example Output**
 
+
+**Feature Distribution Visualization**
+
+![image](https://github.com/LNickelsburg/clusterify/assets/35284172/2c60e4cf-072b-4f63-88b5-d4d9de76f52b)
+
+**PCA Visualization, By User**
+![image](https://github.com/LNickelsburg/clusterify/assets/35284172/b23c5357-1bd6-4c46-8237-32a7d6b2200e)
+
+**Feature Impacts**
+```
+Explained variance by component: [0.21200714 0.11807601 0.09357741]
+
+                       PC1       PC2       PC3
+release_date     -0.105860  0.108055 -0.270989
+acousticness      0.825978  0.212372  0.046326
+danceability     -0.096656  0.598422 -0.524664
+duration_ms      -0.011871 -0.422806  0.266580
+energy           -0.910906 -0.056231 -0.013218
+explicit         -0.140060  0.638455  0.422264
+instrumentalness  0.053705 -0.430325 -0.257584
+key              -0.312674 -0.106028  0.127881
+liveness         -0.391453 -0.097495  0.070925
+loudness         -0.890545 -0.026545 -0.060358
+popularity       -0.544505 -0.014066  0.373624
+mode              0.496088  0.352569  0.214964
+speechiness      -0.248396  0.557099  0.536748
+tempo            -0.064173 -0.207483  0.364337
+time_signature   -0.301227  0.141320 -0.242334
+valence          -0.357743  0.446483 -0.393975
+```
+
