@@ -8,6 +8,9 @@ Spotify API (see "apiify")
 3. Features undergo PCA dimensionality reduction, then are visualized based on
 K-means clustering and based on user tag (see "clusterify")
 
+## **Future Modifications**
+I have not yet implemented a user interface for the data retrieval step. Eventually, it will all be able to happen with just a few clicks; for now, please follow the instructions in the "takeify" section below to retrieve your data. 
+
 ## **Instructions**
 ### **takeify**
 If you are retrieving your data to be analyzed but *not* analyzing it yourself, this is the only file you will need to use. Open takeify.ipynb, then select "Open In Colab" at the top of the code preview. This will take you to Google Colab, where you will run the code. 
