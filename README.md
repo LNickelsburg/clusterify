@@ -9,7 +9,8 @@ Spotify API (see "apiify")
 K-means clustering and based on user tag (see "clusterify")
 
 ## **Future Modifications**
-I have not yet implemented a user interface for the data retrieval step. Eventually, it will all be able to happen with just a few clicks; for now, please follow the instructions in the "takeify" section below to retrieve your data. 
+- I have not yet implemented a user interface for the data retrieval step. Eventually, it will all be able to happen with just a few clicks; for now, please follow the instructions in the "takeify" section below to retrieve your data.
+- I intend to modify my dimensionality reduction process such that each component is influenced by no more than 3 features, and no two components are influenced by the same feature. My goal is to be able to visualize this data in three dimensions, with each axis conveying clear and interpretable information.
 
 ## **Instructions**
 ### **takeify**
