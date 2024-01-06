@@ -6,7 +6,7 @@ This is a 3-step process:
 2. User histories are consolidated, and track features are accessed from the
 Spotify API (see "apiify")
 3. Features undergo PCA dimensionality reduction, then are visualized based on
-K-means clustering and based on user tag (see "clusterify")
+user tag (see "clusterify")
 
 ## **Future Modifications**
 - I have not yet implemented a user interface for the data retrieval step. Eventually, it will all be able to happen with just a few clicks; for now, please follow the instructions in the "takeify" section below to retrieve your data.
@@ -52,29 +52,14 @@ Just run it woooooo
 
 ![image](https://github.com/LNickelsburg/clusterify/assets/35284172/2c60e4cf-072b-4f63-88b5-d4d9de76f52b)
 
-**PCA Visualization, By User**
-![image](https://github.com/LNickelsburg/clusterify/assets/35284172/b23c5357-1bd6-4c46-8237-32a7d6b2200e)
 
-**Feature Impacts**
-```
-Explained variance by component: [0.21200714 0.11807601 0.09357741]
+**PCA Visualization, By User**<br>
+<img src="https://github.com/LNickelsburg/clusterify/assets/35284172/041e8c83-02fe-42e3-b03d-5f3bbbb6c447" width="300" height="200">
+<img src="https://github.com/LNickelsburg/clusterify/assets/35284172/8cb9ec71-4b56-42f0-aa32-e8cb64b1d302" width="300" height="200">
 
-                       PC1       PC2       PC3
-release_date     -0.105860  0.108055 -0.270989
-acousticness      0.825978  0.212372  0.046326
-danceability     -0.096656  0.598422 -0.524664
-duration_ms      -0.011871 -0.422806  0.266580
-energy           -0.910906 -0.056231 -0.013218
-explicit         -0.140060  0.638455  0.422264
-instrumentalness  0.053705 -0.430325 -0.257584
-key              -0.312674 -0.106028  0.127881
-liveness         -0.391453 -0.097495  0.070925
-loudness         -0.890545 -0.026545 -0.060358
-popularity       -0.544505 -0.014066  0.373624
-mode              0.496088  0.352569  0.214964
-speechiness      -0.248396  0.557099  0.536748
-tempo            -0.064173 -0.207483  0.364337
-time_signature   -0.301227  0.141320 -0.242334
-valence          -0.357743  0.446483 -0.393975
-```
+**Plotting based on manually selected features**<br>
+After considering the feature impacts on each PCA component, I tried plotting the data using only 3 variables (with one variable per axis), rather than using all variables on all axes as PCA does. I found that using only 3 variables, I was still able to produce a very similar result.
+<img src="https://github.com/LNickelsburg/clusterify/assets/35284172/5cadf94a-b41b-4752-8a88-7d0c4901cdeb" width="300" height="200">
+<img src="https://github.com/LNickelsburg/clusterify/assets/35284172/1eb303b9-ed7e-42d3-8448-6458bd8db750" width="300" height="200">
 
+In both the PCA-based example and the 3-variable example, the data is represented in a U-shape; the three users are distributed similarly throughout the plot, and similar musical artists and songs are close together.
